@@ -1,0 +1,4 @@
+
+A platform is a specific OpenCL implementation, for instance AMD APP, NVIDIA or Intel OpenCL. A context is a platform with a set of available devices for that platform. And the devices are the actual processors (CPU, GPU etc.) that perform calculations.
+
+So if you use the Intel platform, a valid context with this platform would include a CPU device. While if you use the NVIDIA platform, a valid context would include an NVIDIA GPU device.
