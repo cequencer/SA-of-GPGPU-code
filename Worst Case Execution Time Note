@@ -1,0 +1,10 @@
+week 1 : Take a look about wcet
+ 
+WCET is often used as an input to schedulability analysis,  if the software worst case execution time can be determined, then the designer of the system can use this with other techniques such as schedulability analysis to ensure that the system responds fast enough.Although, a much more common use of WCET in critical systems is to ensure that the pre-allocated timing budgets in a partition-scheduled system such as ARINC 653 are not violated.
+Partition scheduling provides capability for performing parallel processing and also for automation of batch execution of multiple processes.
+ 
+Finding WCET
+end-to-end measurements of code, for example performed by setting an I/O pin on the device to high at the start of the task, and to low at the end of the task and using a logic analyzer to measure the longest pulse width, or by measuring within the software itself using the processor clock or instruction count.
+manual static analysis techniques such as counting assembler instructions for each function, loop etc. and then combining them.
+The problem of finding WCET by analysis is equivalent to the halting problem and is therefore insoluble in the general case. Fortunately for the kind of systems that engineers typically want to find WCET for, the software is typically well structured, will always terminate and is analyzable.
+ 
