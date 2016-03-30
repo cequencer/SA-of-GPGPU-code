@@ -1,4 +1,39 @@
 
-A platform is a specific OpenCL implementation, for instance AMD APP, NVIDIA or Intel OpenCL. A context is a platform with a set of available devices for that platform. And the devices are the actual processors (CPU, GPU etc.) that perform calculations.
+* SCHEDULE
+week 1 wcet
+week 2 sa
+week 3 wcet+sa
+week 4 gpu/opencl
+week 5 cache
+week 6 
+week 7
+
+* WCET
+
+* STATIC ANALYZE
+
+* WCET + STATIC ANALYZE
+
+
+
+* OPENCL PLATFORM/CONTEXT/DEVICE
+A platform is a specific OpenCL implementation, for instance AMD APP, NVIDIA or Intel OpenCL.
+A context is a platform with a set of available devices for that platform.
+And the devices are the actual processors (CPU, GPU etc.) that perform calculations.
 
 So if you use the Intel platform, a valid context with this platform would include a CPU device. While if you use the NVIDIA platform, a valid context would include an NVIDIA GPU device.
+
+
+
+
+* CACHE MISS
+Compulsory misses：也稱為cold start misses，第一次存取未曾在cache內的block而發生的cache miss。
+Capacity misses：因為在程式執行期間，cache無法包含所有需要的block而產生的cache miss。發生在一個block被取代後，稍後卻又需要用到。
+Conflict misses：發生在set-associative或direct-mapped caches，當多個blocks競爭相同的set。通常也稱作collision misses。
+ 
+Memory hierarchy design challenges
+Design change      Effect on miss rate   Possible negative performance effect
+增加cache size     降低capacity misses   可能增加access time 
+增加associativity  降低conflict misses   可能增加access time
+增加block size     降低compulsory misses 增加miss penalty
+
