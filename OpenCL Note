@@ -29,6 +29,27 @@ So if you use the Intel platform, a valid context with this platform would inclu
 thread block streaming multiprocessor
  kernel grid         GPU
  
+ Execution model
+ kernel
+ program:analogous to a dynamic library for gpgpu
+ application queue kernel execution instance
+
+GPU devices use the Single Instruction Multiple Threads (SIMT) execution model. In the
+model, threads are grouped into warps of constant size.
+
+
+
+one contex may have multiple devices
+ 
+ choose the dimension 'best' for the algorithm(1,2,or3)
+ 
+ 
+ 
+ 
+ 
+*OPTIMIZING OPENCL CODE
+uchar->uchar_16->uchar_16_vload
+ 
  
 *CACHE MISS
 Compulsory misses：也稱為cold start misses，第一次存取未曾在cache內的block而發生的cache miss。
@@ -41,3 +62,12 @@ Design change      Effect on miss rate   Possible negative performance effect
 增加associativity  降低conflict misses   可能增加access time
 增加block size     降低compulsory misses 增加miss penalty
 
+scratch pad memory
+no 'tag' needed, easy for static analysing
+
+NVIDIA's 8800 GPU running under CUDA provides 16 KB of scratchpad (NVIDIA calls it Shared Memory) per thread-bundle when being used for GPGPU tasks. 
+
+
+
+reference
+https://software.intel.com/en-us/videos/optimizing-simple-opencl-kernels-modulate-kernel-optimization
