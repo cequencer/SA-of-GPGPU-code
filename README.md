@@ -1,2 +1,2 @@
-# SA-of-CPCPU-code
+# SA-of-GPGPU-code
 my senior project
