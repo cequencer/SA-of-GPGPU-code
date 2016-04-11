@@ -1,0 +1,19 @@
+GPGPU發展與限制、應用，作者解決了很大的排程和中斷的問題
+the GPU can't be hard real time because of the bus speed between CPU & GPU and not able to support preemption ~2011(maybe preemption IS supported after 2011)
+https://cs.unc.edu/~anderson/papers/cpsna11.pdf
+
+
+A Performance Analysis Framework for Identifying Potential Benefits in GPGPU Applications
+
+Cache Effect: Recent GPGPU architectures such as NVIDIA’s
+Fermi GPGPUs have a hardware-managed cache memory hierarchy.
+Since the baseline model does not model cache effects, the
+total memory cycles are determined by multiplying memory requests
+and the average global memory latency. We simply model
+the cache effect by calculating average memory access latency
+(AMAT); the total memory cycles are calculated by multiplying
+memory requests and AMAT.
+http://www.cc.gatech.edu/~hyesoon/sim_ppopp12.pdf
+
+
+
