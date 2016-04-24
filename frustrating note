@@ -1,0 +1,26 @@
+Real-World Constraints of GPUs in Real-Time Systems(they solve some interrupt & scheduling problems)
+the GPU can't be hard real time because of the bus speed between CPU & GPU and not able to support preemption ~2011(maybe preemption IS supported after 2011)
+
+
+A Performance Analysis Framework for Identifying Potential Benefits in GPGPU Applications
+
+NVIDIA’s Fermi GPGPUs have a hardware-managed cache memory hierarchy.
+The total memory cycles are calculated by multiplying memory requests and AMAT.
+AMAT = avg DRAM lat × miss ratio + hit lat (12)
+avg DRAM lat = DRAM lat + (avg trans warp − 1) × Δ.
+
+http://www.cc.gatech.edu/~hyesoon/sim_ppopp12.pdf
+
+--------------------------------------------------------------------------------
+
+Estimating the WCET of GPU-Accelerated Applications Using Hybrid Analysis
+
+the associativity and replacement policies of the cache, the pipeline depth, and how exactly threads are scheduled on NVIDIA GPUs all remain undisclosed. 
+->modelling the hardware and its associated run-time support is infeasible. 
+->Our solution is to use hybrid techniques [10], [11] that can, in principle, avoid hardware modelling.
+
+---------------------------------------------------------------------------------
+On Static Timing Analysis of GPU Kernels
+
+In describing our WCET estimation method, we concentrate on features related to the SIMT
+execution model and omit the other features (e.g., pipelines and caches).
