@@ -9,4 +9,6 @@ manual static analysis techniques such as counting assembler instructions for ea
 The problem of finding WCET by analysis is equivalent to the halting problem and is therefore insoluble in the general case. Fortunately for the kind of systems that engineers typically want to find WCET for, the software is typically well structured, will always terminate and is analyzable.
  
 Embedded Systems Lecture 11: Worst-Case Execution Time
+
 https://ti.tuwien.ac.at/cps/teaching/courses/real-time-systems/slides/rts06_wcet_analysis.pdf
+(has talked about CACHES)
