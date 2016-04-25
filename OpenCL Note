@@ -71,3 +71,16 @@ NVIDIA's 8800 GPU running under CUDA provides 16 KB of scratchpad (NVIDIA calls 
 
 reference
 https://software.intel.com/en-us/videos/optimizing-simple-opencl-kernels-modulate-kernel-optimization
+
+
+
+
+
+
+
+
+https://software.intel.com/en-us/articles/opencl-tutorials
+http://www.cmsoft.com.br/opencl-tutorial/
+http://dhruba.name/2012/08/21/opencl-cookbook-series-reference/
+https://www.fixstars.com/en/opencl/book/OpenCLProgrammingBook/first-opencl-program/
+http://developer.amd.com/tools-and-sdks/opencl-zone/opencl-resources/programming-in-opencl/
