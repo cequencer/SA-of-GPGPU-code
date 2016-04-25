@@ -1,7 +1,7 @@
 Real-World Constraints of GPUs in Real-Time Systems(they solve some interrupt & scheduling problems)
 the GPU can't be hard real time because of the bus speed between CPU & GPU and not able to support preemption ~2011(maybe preemption IS supported after 2011)
 
-
+--------------------------------------------------------------------------------
 A Performance Analysis Framework for Identifying Potential Benefits in GPGPU Applications
 
 NVIDIA’s Fermi GPGPUs have a hardware-managed cache memory hierarchy.
