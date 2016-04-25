@@ -67,6 +67,8 @@ no 'tag' needed, easy for static analysing
 
 NVIDIA's 8800 GPU running under CUDA provides 16 KB of scratchpad (NVIDIA calls it Shared Memory) per thread-bundle when being used for GPGPU tasks. 
 
+mem_fence does not cause execution to stop at that point, only that memory operations will not get reordered around the fence instruction. A barrier gaurantees that all work-items reach that point before any work-item moves to the next instruction
+
 
 
 reference
