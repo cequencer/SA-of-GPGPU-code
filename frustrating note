@@ -24,3 +24,8 @@ On Static Timing Analysis of GPU Kernels
 
 In describing our WCET estimation method, we concentrate on features related to the SIMT
 execution model and omit the other features (e.g., pipelines and caches).
+
+---------------------------------------------------------------------------------
+WCET Measurement-based and Extreme Value Theory Characterisation of CUDA Kernels 
+
+Use statistic way to make the failure smaller than 10^-9 ~ 10^-12 but NOT ZERO
