@@ -71,6 +71,18 @@ mem_fence does not cause execution to stop at that point, only that memory opera
 
 
 
+Memory And Cache Architecture
+http://supercomputingblog.com/cuda/cuda-memory-and-cache-architecture/
+
+
+
+
+
+
+
+
+
+
 reference
 https://software.intel.com/en-us/videos/optimizing-simple-opencl-kernels-modulate-kernel-optimization
 
