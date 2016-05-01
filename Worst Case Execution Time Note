@@ -10,5 +10,15 @@ The problem of finding WCET by analysis is equivalent to the halting problem and
  
 Embedded Systems Lecture 11: Worst-Case Execution Time
 
+
+the difference from multiCPU or  multicore to GPU
+ the limitations of static analysis
+ the complexity of the lock-step execution model employed by mainstream GPUs
+ the requirement to accurately reason about bulk-synchronous parallel execution.
+
+
+
+
+
 https://ti.tuwien.ac.at/cps/teaching/courses/real-time-systems/slides/rts06_wcet_analysis.pdf
 (has talked about CACHES)
